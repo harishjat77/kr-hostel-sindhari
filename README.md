@@ -1,13 +1,14 @@
 # K. R. Hostel & Coaching Center
 
-Official landing page for **K. R. Hostel & Coaching Center, Sindhari, Balotara (Rajasthan)**.
+Official multi-page website for **K. R. Aadarsh Hostel & Coaching Center, Sindhari, Balotara (Rajasthan)**.
 
 ## Current version
 
-- Responsive landing page for desktop, tablet, and mobile
-- Custom SVG brand mark
-- Hostel overview and campus photography
-- Director and direct contact information
+- Responsive Home, About, Facilities, Programs, Gallery, and Contact pages
+- Custom architectural SVG brand mark and shared navigation system
+- Detailed, management-provided hostel facilities and academic support information
+- Interactive genuine-campus gallery slider and lightbox
+- Director and direct contact information placed in the contact/footer areas
 - One-tap phone, WhatsApp, email, and Maps actions
 - Accessible navigation, motion preferences, and structured local-business metadata
 

@@ -1,25 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
-  <title id="title">K. R. Aadarsh Hostel logo</title>
-  <desc id="desc">A modern K R academic shield with a rising sun and an open book.</desc>
+  <title id="title">K. R. Aadarsh Hostel</title>
+  <desc id="desc">An architectural K R monogram with an open book.</desc>
   <defs>
-    <linearGradient id="shield" x1="20" y1="10" x2="76" y2="87" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#18577E"/>
-      <stop offset="1" stop-color="#07182C"/>
+    <linearGradient id="base" x1="14" y1="8" x2="82" y2="91" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#235FA9"/>
+      <stop offset="1" stop-color="#081A33"/>
     </linearGradient>
-    <linearGradient id="edge" x1="20" y1="12" x2="76" y2="84" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#91CEDC"/>
-      <stop offset="1" stop-color="#4C91B4"/>
+    <linearGradient id="accent" x1="25" y1="15" x2="72" y2="81" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD87A"/>
+      <stop offset="1" stop-color="#F2B84B"/>
     </linearGradient>
-    <filter id="shadow" x="-25%" y="-20%" width="150%" height="155%">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#030D17" flood-opacity=".32"/>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#07152A" flood-opacity=".28"/>
     </filter>
   </defs>
-  <path d="M48 5 83 18v27c0 21.5-13.2 36.3-35 46C26.2 81.3 13 66.5 13 45V18L48 5Z" fill="url(#shield)" filter="url(#shadow)"/>
-  <path d="M48 10 78 21v24c0 18.1-10.7 31.1-30 40.2C28.7 76.1 18 63.1 18 45V21L48 10Z" fill="none" stroke="url(#edge)" stroke-width="1.6"/>
-  <path d="M39 31a9 9 0 0 1 18 0" fill="none" stroke="#91CEDC" stroke-width="2" stroke-linecap="round"/>
-  <path d="M48 17.5V23M35.5 22l4 4M60.5 26l4-4" fill="none" stroke="#91CEDC" stroke-width="1.7" stroke-linecap="round"/>
-  <path d="M28 36h40" fill="none" stroke="#E5F2F5" stroke-width="1" opacity=".3"/>
-  <text x="48" y="59" fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="700" letter-spacing="-1.5" text-anchor="middle">KR</text>
-  <path d="M25 65.5c8.7-2.7 16.3-1.2 23 4.7 6.7-5.9 14.3-7.4 23-4.7v11c-8.8-2.4-16.5-.8-23 4.8-6.5-5.6-14.2-7.2-23-4.8v-11Z" fill="#F8F5EE"/>
-  <path d="M48 70.2v11.1M29 68.8c6.9-1.2 12.7.4 19 5.2M67 68.8c-6.9-1.2-12.7.4-19 5.2" fill="none" stroke="#E76D52" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="7" y="7" width="82" height="82" rx="25" fill="url(#base)" filter="url(#shadow)"/>
+  <rect x="12.5" y="12.5" width="71" height="71" rx="20" fill="none" stroke="url(#accent)" stroke-width="1.5"/>
+  <path d="M25 64V41c0-14 10.3-24 23-24s23 10 23 24v23" fill="none" stroke="#F2B84B" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M30 39h36" stroke="#FFFFFF" stroke-width="1" opacity=".22"/>
+  <text x="48" y="59" fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700" letter-spacing="-1.5" text-anchor="middle">KR</text>
+  <path d="M23 66c9-2.9 17.4-1.3 25 4.8 7.6-6.1 16-7.7 25-4.8v10.8c-9.1-2.5-17.4-.9-25 4.7-7.6-5.6-15.9-7.2-25-4.7V66Z" fill="#FFFDF7"/>
+  <path d="M48 70.8v10.7M28 69.3c7.2-1.2 13.7.5 20 5.2M68 69.3c-7.2-1.2-13.7.5-20 5.2" fill="none" stroke="#F2B84B" stroke-width="1.8" stroke-linecap="round"/>
 </svg>
