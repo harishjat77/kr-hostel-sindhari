@@ -3,6 +3,7 @@ const menuToggle = document.querySelector('.menu-toggle');
 const mobileNav = document.querySelector('.mobile-nav');
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('main section[id]');
+const scrollProgress = document.getElementById('scroll-progress');
 
 const closeMenu = () => {
   menuToggle.classList.remove('is-open');
@@ -22,9 +23,26 @@ menuToggle.addEventListener('click', () => {
 
 mobileNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
 
-const updateHeader = () => header.classList.toggle('is-scrolled', window.scrollY > 24);
-updateHeader();
-window.addEventListener('scroll', updateHeader, { passive: true });
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && mobileNav.classList.contains('is-open')) {
+    closeMenu();
+    menuToggle.focus();
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 900 && mobileNav.classList.contains('is-open')) closeMenu();
+});
+
+const updateScrollState = () => {
+  header.classList.toggle('is-scrolled', window.scrollY > 24);
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+  scrollProgress.style.width = `${Math.min(progress, 100)}%`;
+};
+
+updateScrollState();
+window.addEventListener('scroll', updateScrollState, { passive: true });
 
 const activeSectionObserver = new IntersectionObserver(
   (entries) => {
